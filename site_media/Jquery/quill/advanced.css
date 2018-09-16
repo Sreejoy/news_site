@@ -1,0 +1,17 @@
+.advanced-wrapper {
+  border: 1px solid #ccc;
+}
+.advanced-wrapper {
+  width: 100%;
+}
+.editor-container {
+  height: 400px;
+}
+.toolbar-container {
+  border-bottom: 1px solid #ccc;
+}
+.toolbar-container .ql-active,
+.toolbar-container button:hover {
+  color: #008000;
+  font-weight: bold;
+}

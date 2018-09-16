@@ -1,0 +1,137 @@
+{% extends "BaseTemplate.html" %}
+
+{% block title%}News{% endblock %}
+
+{% block content %}
+
+<script type="text/javascript" src="/static/Jquery/Local/story.js"></script>
+
+
+<article>
+
+<style type="text/css">
+        .resp-tab-active {
+            border: 1px solid #E95A63 !important;
+            border-bottom: none;
+            margin-bottom: -1px !important;
+            padding: 12px 14px 14px 14px !important;
+            border-top: 4px solid #E95A63 !important;
+            border-bottom: 0px #fff solid !important;
+        }
+        .resp-tab-content {
+            border: 1px solid #E95A63;
+            border-top-color: #E95A63;
+        }
+
+        hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 1em 0;
+            padding: 0;
+        }
+    </style>
+
+    <div id="modal_create" class="modal fade" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                            <h4 class="modal-title">Create/Update News</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="control-label col-md-2">Title</label>
+                                    <div class="col-md-10">
+                                        <input id="title" class="form-control" type="text" name="title">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-2"> Body</label>
+                                    <div class="col-md-10">
+                                        <textarea style="resize: none;" id="body" class="form-control" rows="10" col="200" type="text" name="body"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-2">Author</label>
+                                    <div class="col-md-10">
+                                        <input id="author" class="form-control" type="text" name="author">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn dark btn-outline sbold uppercase" data-dismiss="modal" aria-hidden="true">Close</button>
+                            <button id="submit_news" class="btn green btn-outline sbold uppercase" data-dismiss="modal">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+ <!-- BEGIN PAGE TITLE-->
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="page-title"> News
+                        <small>Search & View</small>
+                    </h3>
+                </div>
+                <button style="float:right; margin-right:20px;" id="logout" class="btn red btn-outline sbold uppercase" type="button"><i class="fa fa-plane"></i> Logout</button>
+            </div>
+                    <!-- END PAGE TITLE-->
+
+    <div class="parentHorizontalTab" id="TaskTab">
+        <ul class="resp-tabs-list hor_1">
+            <li>All</li>
+        </ul>
+        <div class="resp-tabs-container hor_1">
+            <div>
+                <table id='' style='display: block;'>
+                    <tbody>
+                    <tr>
+                        <td align="left" width="75%">
+                            <label > <b id = 'AutoSearchTextBoxLabel' class = 'Text'></b></label>
+                            <input id='searchbox' type="hidden"/>
+                        </td>
+                        <td align="right" width="20%">
+                            <button id="create_news" data-target="#modal_create" data-toggle="modal" class="btn green btn-outline sbold uppercase" type="button"><i class="fa fa-plus"></i> Create News</button>
+                        </td>
+                        <td align="right" width="5%">
+                            <select align="right" id="perpageitem">
+                                <option value="">Per Page Items</option>
+                                <option value=5 selected>5</option>
+                                <option value=10>10</option>
+                                <option value=20>20</option>
+                                <option value=25>25</option>
+                                <option value=50>50</option>
+                                <option value=100>100</option>
+                            </select>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table id = 'AutoSearchResult'>
+                    <tbody>
+                    <tr id = 'searchedtext'>
+                        <p></p>
+                        <th class = 'Text' style= 'text-align: left'> Searched By: </th>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div id = "AllMSTable"></div>
+                <div id="pagination_div"></div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</article>
+
+{% endblock %}

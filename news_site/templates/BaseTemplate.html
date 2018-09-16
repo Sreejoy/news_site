@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
+
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %} {% endblock %} | News</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+        <link href="/static/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="/static/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="/static/assets/global/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="/static/assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="/static/assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="/static/assets/global/plugins/bootstrap-editable/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet" type="text/css" />
+
+
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL STYLES -->
+        <link href="/static/assets/global/css/components.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="/static/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME GLOBAL STYLES -->
+        <!-- BEGIN THEME LAYOUT STYLES -->
+        <link href="/static/assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+        <link href="/static/assets/layouts/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="/static/assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME LAYOUT STYLES -->
+        <link rel="shortcut icon" href="/static/Logo.ico" />
+
+
+        <!--  AS css -->
+        <link rel="stylesheet" type="text/css" href="/static/Jquery/Easy-Responsive-Tabs-to-Accordion/css/easy-responsive-tabs.css">
+
+
+                <!-- BEGIN CORE PLUGINS -->
+        <script src="/static/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="/static/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/static/assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+        <script src="/static/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+        <script src="/static/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+
+        <script src="/static/assets/global/plugins/bootbox/bootbox.min.js" type="text/javascript"></script>
+        <script src="/static/assets/global/plugins/bootstrap-editable/bootstrap-editable/js/bootstrap-editable.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="/static/assets/global/scripts/app.js" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+
+        <!-- BEGIN THEME PAGE LEVEL SCRIPTS -->
+        <script src="/static/assets/pages/scripts/ui-bootbox.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+
+
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <script src="/static/assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+        <script src="/static/assets/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
+        <script src="/static/assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+        <script src="/static/assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+        <!-- END THEME LAYOUT SCRIPTS -->
+
+
+        <!-- JQuery UI Files http://jqueryui.com/themeroller/ -->
+        <script type="text/javascript"
+            src="/static/Jquery/js/jquery-1.8.0.min.js"></script>
+
+        <!-- JQuery URL Address plug In Files http://www.asual.com/jquery/address/ -->
+        <script type="text/javascript"
+            src="/static/Jquery/jquery.address-1.4/jquery.address-1.4.min.js"></script>
+
+
+
+        <!-- framework scripts -->
+
+        <script type="text/javascript" src="/static/Jquery/Local/Base.js"></script>
+        <script type="text/javascript"
+            src="/static/Jquery/Local/jquery.session.js"></script>
+
+
+
+        <!--External plugins-->
+        <script type="text/javascript"
+    src="/static/Jquery/Easy-Responsive-Tabs-to-Accordion/js/easyResponsiveTabs.js"></script>
+
+
+
+        <link href="/static/Jquery/simplepagination/simplePagination.css" rel="stylesheet"/>
+        <script type="text/javascript" src="/static/Jquery/simplepagination/jquery.simplePagination.js"></script>
+        <link href="/static/Jquery/select2/select2.css" rel="stylesheet">
+        <script type="text/javascript" src="/static/Jquery/select2/select2.min.js"></script>
+        <link rel="stylesheet" href="/static/alertify.core.css" />
+        <link rel="stylesheet" href="/static/alertify.default.css" id="toggleCSS" />
+        <script type="text/javascript" src="/static/Jquery/alertify.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/static/PageLevelCSS.css" />
+        <!-- Tooltip library -->
+        <link rel="stylesheet" type="text/css" href="/static/Jquery/jquery-ui-1.11.4/jquery-ui.css">
+        <script type="text/javascript" src="/static/Jquery/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+
+
+        <script src="/static/Jquery/jquery.ticker.min.js" type="text/javascript"></script>
+
+
+
+
+        <!-- Fancybox -->
+
+            <!-- Latest compiled and minified CSS -->
+        <!--link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"-->
+
+    </head>
+    <!-- END HEAD -->
+
+    <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-full-width">
+
+        <div class="page-wrapper">
+            <!-- BEGIN HEADER -->
+            <div class="page-header navbar navbar-fixed-top">
+
+            </div>
+            <!-- END HEADER -->
+            <!-- BEGIN HEADER & CONTENT DIVIDER -->
+            <div class="clearfix"> </div>
+            <!-- END HEADER & CONTENT DIVIDER -->
+            <!-- BEGIN CONTAINER -->
+            <div class="page-container">
+
+                <!-- BEGIN CONTENT -->
+                <div class="page-content-wrapper">
+                    <!-- BEGIN CONTENT BODY -->
+                    <div class="page-content page-full-width">
+
+                        <br/><br/><br/>
+                        <div style="float: right; width: 300px; height: 15px; display: none;" id="progressbar"></div>
+
+
+                        <div id="BLOCK_CONTENT">{% block content %} {% endblock %}</div>
+                        <aside>{% block aside %} {% endblock %}</aside>
+
+                    </div>
+                    <!-- END CONTENT BODY -->
+                </div>
+                <!-- END CONTENT -->
+            </div>
+            <!-- END CONTAINER -->
+
+
+
+
+            <!-- BEGIN FOOTER -->
+            <script type="text/javascript">
+              $(document).ready(function () {
+                $( "#progressbar" ).progressbar({
+                  value: false,
+                });
+              });
+            </script>
+
+            <div id="page-footer" class="page-footer">
+                <div class="page-footer-inner"> 2018 &copy; News by Sreejoy Halder</a>
+                                </div>
+                <div class="scroll-to-top">
+                    <i class="icon-arrow-up"></i>
+                </div>
+            </div>
+            <!-- END FOOTER -->
+        </div>
+
+
+    </body>
+
+</html>
